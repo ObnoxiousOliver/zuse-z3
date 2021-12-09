@@ -277,3 +277,15 @@ img {
     }
   }
 }
+
+//OR NAND
+.page-or-nand {
+  display: none;
+}
+[data-or-nand="true"] {
+  .page-or-nand {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}

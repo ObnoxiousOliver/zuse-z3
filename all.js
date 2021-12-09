@@ -7,6 +7,7 @@ function keydown (e) {
   else if (e.key === 'ArrowLeft') prevPage()
   else if (e.key === 'ArrowUp') list.setAttribute('data-lmkl', false)
   else if (e.key === 'ArrowDown') list.setAttribute('data-lmkl', true)
+  else if (e.key === 'o') list.setAttribute('data-or-nand', list.getAttribute('data-or-nand') === 'true' ? false : true)
 }
 
 function nextPage () {
