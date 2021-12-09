@@ -7,7 +7,7 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <title>ZUSE Z3</title>
 </head>
-<body class="crt">
+<body>
 
   <div id="pages" class="pages" data-state="1" data-lmkl="false">
 
@@ -220,7 +220,9 @@
             <table class="text-center">
               <tr>
                 <td class="w-5 text-xs text-red-600"></td>
-                <td class="w-5 text-xs text-red-600"></td>
+                <td class="w-5 text-xs text-red-600">
+                  <span class="page-stage page-28 page-29 page-30 page-31 page-32">1</span>
+                </td>
                 <td class="w-5 text-xs text-red-600">
                   <span class="page-stage page-27 page-28 page-29 page-30 page-31 page-32">1</span>
                 </td>
@@ -245,10 +247,10 @@
               <tr>
                 <td class="w-5 p-1"></td>
                 <td class="w-5 p-1">
-                  <span class="page-stage page-29 page-30 page-31 page-32">0</span>
+                  <span class="page-stage page-29 page-30 page-31 page-32">1</span>
                 </td>
                 <td class="w-5 p-1">
-                  <span class="page-stage page-28 page-29 page-30 page-31 page-32">1</span>
+                  <span class="page-stage page-28 page-29 page-30 page-31 page-32">0</span>
                 </td>
                 <td class="w-5 p-1">
                   <span class="page-stage page-27 page-28 page-29 page-30 page-31 page-32">1</span>
@@ -434,11 +436,93 @@
       </div>
     </div>
 
-    <!-- PAGE 45 -->
-    <div class="page page-45 fade-next">
+    <!-- PAGE 46 -->
+    <div class="page page-46 fade-next" style="transition: 1s;">
       <div class="flex justify-center items-center flex-col absolute inset-0">
         <div class="text-center">
           <h1 class="text-2xl">Warum ?</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- OR NAND TRUTH TABLE -->
+    <div class="page page-or-nand">
+      <div class="flex gap-20 justify-center items-center absolute inset-0 bg-white text-center">
+
+        <div>
+          NAND-Gate
+
+          <div class="mt-2 rounded overflow-hidden shadow-2xl">
+            <table class="bg-gray-100">
+              <thead>
+                <tr>
+                  <th class="pr-2 pl-2">A</th>
+                  <th class="pr-2 pl-2">B</th>
+                  <th class="pr-2 pl-2 border-l-2 border-gray-500">OUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          OR-Gate
+
+          <div class="mt-2 rounded overflow-hidden shadow-2xl">
+            <table class="bg-gray-100">
+              <thead>
+                <tr>
+                  <th class="pr-2 pl-2">A</th>
+                  <th class="pr-2 pl-2">B</th>
+                  <th class="pr-2 pl-2 border-l-2 border-gray-500">OUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
