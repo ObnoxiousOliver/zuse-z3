@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>ZUSE Z3</title>
+</head>
+<body class="crt">
+
+  <div id="pages" class="pages" data-state="1" data-lmkl="false">
+
+    <!-- PAGE 1 -->
+    <div class="page page-1">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-5xl">ZUSE <span class="font-bold italic">Z3</span></h1>
+          <p>Der erste schritt zum modernen Computer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2 - 6 -->
+    <div class="page page-2 page-3 page-4 page-5 page-6 page-7 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-4xl">Aufbau des <span class="text-5xl">ZUSE <span class="font-bold italic">Z3</span></span></h1>
+          <div class="relative">
+            <img class="m-auto shadow-lg rounded components" src="./12727_Z3-von-Konrad-Zuse-im-Jahr-1960.jpg">
+            <div class="absolute border-2 border-blue-700 text-white rounded box page-stage page-3 page-4 page-5 page-6 page-7"></div>
+            <div class="absolute bg-white shadow-lg rounded w-40 h-8 text-md component-text page-stage page-3 page-4 page-5 page-6 page-7">
+              <span class="absolute inset-0 top-1 text-center page-stage fade-next page-3">Arbeitsspeicher</span>
+              <span class="absolute inset-0 top-1 text-center page-stage fade-next page-4">Prozessor</span>
+              <span class="absolute inset-0 top-1 text-center page-stage fade-next page-5">Rechenteil</span>
+              <span class="absolute inset-0 top-1 text-center page-stage fade-next page-6">Steuerteil</span>
+              <span class="absolute inset-0 top-1 text-center page-stage fade-next page-7">„Monitor“</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 text-xs p-1 pr-3">
+        <small>Quelle: Konrad Zuse Internet Archiv/Deutsches Museum/DFG</small>
+      </div>
+    </div>
+
+    <!-- PAGE 8 - 9 -->
+    <div class="page page-8 page-9 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-4xl">Was konnte der <span class="text-5xl">ZUSE <i><b>Z3</b></i></span> ?</h1>
+        </div>
+      </div>
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <p class="page-stage page-9 text-3xl pt-10">
+            + – × ÷ √
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 10 -->
+    <div class="page page-10 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-4xl">Logische Prozessoren</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 11 - 16 -->
+    <div class="page page-11 page-12 page-13 page-14 page-15 page-16 fade-next">
+      <div class="flex items-center justify-center absolute inset-0">
+        <div class="text-center">
+          <img class="m-auto rounded and-not-images page-stage-display page-11 page-12 page-13" src="./AND-Gate off off.png">
+          <img class="m-auto rounded and-not-images page-stage-display page-14" src="./AND-Gate on off.png">
+          <img class="m-auto rounded and-not-images page-stage-display page-15 page-16 page-17" src="./AND-Gate on on.png">
+          <div class="absolute font-bold left-1/3 top-1/2 text-black text-2xl page-stage page-12 page-13">A</div>
+          <div class="absolute font-bold left-1/3 top-1/2 text-white text-2xl page-stage page-14 page-15 page-16 page-17">A</div>
+          <div class="absolute font-bold right-56 top-1/2 text-black text-2xl page-stage page-13 page-14">B</div>
+          <div class="absolute font-bold right-56 top-1/2 text-white text-2xl page-stage page-15 page-16 page-17">B</div>
+          <div class="absolute animate-ping and-light-on page-stage page-15 page-16 page-17"></div>
+          <div class="absolute rounded top-20 right-16 shadow-2xl and-not-truth page-stage page-16">
+            <table class="rounded overflow-hidden bg-white">
+              <thead>
+                <tr>
+                  <th class="pr-2 pl-2">A</th>
+                  <th class="pr-2 pl-2">B</th>
+                  <th class="pr-2 pl-2 border-l-2 border-gray-500">OUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 text-xs p-1 pr-3">
+        <small>Quelle: Sebastian Lague - <a target="_blank" href="https://youtu.be/QZwneRb-zqA" class="text-blue-500">https://youtu.be/QZwneRb-zqA</a></small>
+      </div>
+    </div>
+
+    <!-- PAGE 17 - 19 -->
+    <div class="page page-17 page-18 page-19 fade-next">
+      <div class="flex items-center justify-center absolute inset-0">
+        <div class="text-center">
+          <img class="m-auto rounded and-not-images page-stage-display page-17" src="./NOT-Gate off.png">
+          <img class="m-auto rounded and-not-images page-stage-display page-18 page-19" src="./NOT-Gate on.png">
+          <div style="left: 47%" class="absolute font-bold top-1/2 text-black text-2xl page-stage page-17">A</div>
+          <div style="left: 47%" class="absolute font-bold top-1/2 text-white text-2xl page-stage page-18 page-19 page-20">A</div>
+          <div class="absolute animate-ping not-light-on page-stage page-17"></div>
+          <div class="absolute rounded top-20 right-16 shadow-2xl and-not-truth page-stage page-19">
+            <table class="rounded overflow-hidden bg-white">
+              <thead>
+                <tr>
+                  <th class="pr-2 pl-2">A</th>
+                  <th class="pr-2 pl-2 border-l-2 border-gray-500">OUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 text-xs p-1 pr-3">
+        <small>Quelle: Sebastian Lague - <a target="_blank" href="https://youtu.be/QZwneRb-zqA" class="text-blue-500">https://youtu.be/QZwneRb-zqA</a></small>
+      </div>
+    </div>
+
+    <!-- PAGE 20 - 22 -->
+    <div class="page page-20 page-21 page-22 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-2xl p-2">Wie kann der Rechner die Schalter betätigen?</h1>
+        </div>
+      </div>
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <p class="page-stage page-21 page-22 text-4xl font-bold">RELAIS</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center absolute inset-0 top-20">
+        <img class="rounded shadow-lg w-72 page-stage page-22"" src="./1200px-Elektromagnetischerspeicher_zuse_relais.jpg">
+      </div>
+      <div class="absolute right-0 bottom-0 text-xs p-1 pr-3 page-stage page-22 transition-opacity">
+        <small>Quelle: Wikipedia - Relais der Computer vom Typ Z3, Z5, Z11</small>
+      </div>
+    </div>
+
+    <!-- PAGE 23 -->
+    <div class="page page-23 fade-next">
+      <div class="flex justify-center items-center flex-col absolute inset-0">
+        <h1 class="text-3xl p-2 text-center pb-5">BINÄR</h1>
+        <div>
+          <table class="text-center">
+            <tr>
+              <td class="w-10 p-2 border-2">8</td>
+              <td class="w-10 p-2 border-2">4</td>
+              <td class="w-10 p-2 border-2">2</td>
+              <td class="w-10 p-2 border-2">1</td>
+            </tr>
+            <tr class="font-semibold">
+              <td id="bin-8" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-4" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-2" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-1" class="w-10 p-2 border-2 cursor-pointer">0</td>
+            </tr>
+          </table>
+          <p class="pt-5 pl-2">
+            Dezimal: <span id="bin-result" class="font-semibold">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 24 -->
+    <div class="page page-24 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-2xl p-2"><span class="font-bold">ADDITION</span> IN BINÄR</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 25 - 31 -->
+    <div class="page page-25 page-26 page-27 page-28 page-29 page-30 page-31 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <div class="bin-add-content">
+            <table class="text-center">
+              <tr>
+                <td class="w-5 text-xs text-red-600"></td>
+                <td class="w-5 text-xs text-red-600"></td>
+                <td class="w-5 text-xs text-red-600">
+                  <span class="page-stage page-27 page-28 page-29 page-30 page-31 page-32">1</span>
+                </td>
+                <td class="w-5 text-xs text-red-600">
+                  <span class="page-stage page-26 page-27 page-28 page-29 page-30 page-31 page-32">1</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="w-5 p-1 pt-0"></td>
+                <td class="w-5 p-1 pt-0">0</td>
+                <td class="w-5 p-1 pt-0">1</td>
+                <td class="w-5 p-1 pt-0">1</td>
+                <td class="w-5 p-1 pt-0">1</td>
+              </tr>
+              <tr>
+                <td class="w-5 p-1 border-b-2 border-black">+</td>
+                <td class="w-5 p-1 border-b-2 border-black">0</td>
+                <td class="w-5 p-1 border-b-2 border-black">0</td>
+                <td class="w-5 p-1 border-b-2 border-black">1</td>
+                <td class="w-5 p-1 border-b-2 border-black">1</td>
+              </tr>
+              <tr>
+                <td class="w-5 p-1"></td>
+                <td class="w-5 p-1">
+                  <span class="page-stage page-29 page-30 page-31 page-32">0</span>
+                </td>
+                <td class="w-5 p-1">
+                  <span class="page-stage page-28 page-29 page-30 page-31 page-32">1</span>
+                </td>
+                <td class="w-5 p-1">
+                  <span class="page-stage page-27 page-28 page-29 page-30 page-31 page-32">1</span>
+                </td>
+                <td class="w-5 p-1">
+                  <span class="page-stage page-26 page-27 page-28 page-29 page-30 page-31 page-32">0</span>
+                </td>
+              </tr>
+            </table>
+            <p class="transition-opacity pt-5 text-2xl page-stage page-30 page-31 page-32">
+              7 + 3 = 10
+            </p>
+          </div>
+
+          <div style="top: 7rem; left: 21.6rem; width: 1.5rem; height: 5.7rem;"
+            class="bin-add-box absolute border-2 border-red-600 page-stage page-31 rounded"></div>
+
+          <div class="absolute rounded top-1/3 right-16 shadow-xl and-not-truth page-stage page-31">
+            <table class="rounded overflow-hidden bg-white">
+              <thead>
+                <tr class="bg-gray-50">
+                  <th class="pr-2 pl-2">A</th>
+                  <th class="pr-2 pl-2">B</th>
+                  <th class="pr-2 pl-2 border-l-2 border-gray-500">SUM</th>
+                  <th class="pr-2 pl-2">CARRY</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                  <td class="bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-red-200">0</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                  <td class="border-l-2 border-gray-500 bg-blue-100">1</td>
+                  <td class="bg-red-200">0</td>
+                </tr>
+                <tr>
+                  <td class="bg-blue-100">1</td>
+                  <td class="bg-blue-100">1</td>
+                  <td class="border-l-2 border-gray-500 bg-red-200">0</td>
+                  <td class="bg-blue-100">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 32 -->
+    <div class="page page-32 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-2xl p-2"><span class="font-bold">SUBTRAKTION</span> IN BINÄR</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 33 - 34 -->
+    <div class="page page-33 page-34 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <div class="text-2xl">
+            7 +
+            <div class="w-12 h-6 inline-block relative">
+              <span class="absolute inset-0 page-stage page-33">(-7)</span>
+              <span class="absolute inset-0 page-stage page-34 page-35">?</span>
+            </div>
+            = 0
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 35 - 40 -->
+    <div class="page page-35 page-36 page-37 page-38 page-39 page-40 fade-next">
+      <div class="flex justify-center items-center absolute inset-0">
+        <div class="text-center">
+          <table class="text-center">
+            <tr>
+              <td class="w-5 text-xs text-red-600">
+                <span class="page-stage page-39 page-40 page-41">1</span></td>
+              <td class="w-5 text-xs text-red-600">
+                <span class="page-stage page-38 page-39 page-40 page-41">1</span>
+              </td>
+              <td class="w-5 text-xs text-red-600">
+                <span class="page-stage page-37 page-38 page-39 page-40 page-41">1</span>
+              </td>
+              <td class="w-5 text-xs text-red-600">
+                <span class="page-stage page-36 page-37 page-38 page-39 page-40 page-41">1</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-5 p-1 pt-0"></td>
+              <td class="w-5 p-1 pt-0">0</td>
+              <td class="w-5 p-1 pt-0">1</td>
+              <td class="w-5 p-1 pt-0">1</td>
+              <td class="w-5 p-1 pt-0">1</td>
+            </tr>
+            <tr>
+              <td class="w-5 p-1 border-b-2 border-black">+</td>
+              <td class="w-5 p-1 border-b-2 border-black">
+                <span class="page-stage-display page-39 page-40 page-41">1</span>
+                <span class="page-stage-display page-35 page-36 page-37 page-38">?</span>
+              </td>
+              <td class="w-5 p-1 border-b-2 border-black">
+                <span class="page-stage-display page-38 page-39 page-40 page-41">0</span>
+                <span class="page-stage-display page-35 page-36 page-37">?</span>
+              </td>
+              <td class="w-5 p-1 border-b-2 border-black">
+                <span class="page-stage-display page-37 page-38 page-39 page-40 page-41">0</span>
+                <span class="page-stage-display page-35 page-36">?</span>
+              </td>
+              <td class="w-5 p-1 border-b-2 border-black">
+                <span class="page-stage-display page-36 page-37 page-38 page-39 page-40 page-41">1</span>
+                <span class="page-stage-display page-35">?</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-5 p-1">
+                <span class="page-stage page-40 page-41">(1)</span>
+              </td>
+              <td class="w-5 p-1">0</td>
+              <td class="w-5 p-1">0</td>
+              <td class="w-5 p-1">0</td>
+              <td class="w-5 p-1">0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 41 -->
+    <div class="page page-41 fade-next">
+      <div class="flex justify-center items-center flex-col absolute inset-0">
+        <h1 class="text-3xl p-2 text-center pb-5">Zweierkompliment</h1>
+        <div>
+          <table class="text-center">
+            <tr>
+              <td class="w-10 p-2 border-2">-8</td>
+              <td class="w-10 p-2 border-2">4</td>
+              <td class="w-10 p-2 border-2">2</td>
+              <td class="w-10 p-2 border-2">1</td>
+            </tr>
+            <tr class="font-semibold">
+              <td id="bin-tc-8" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-tc-4" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-tc-2" class="w-10 p-2 border-2 cursor-pointer">0</td>
+              <td id="bin-tc-1" class="w-10 p-2 border-2 cursor-pointer">0</td>
+            </tr>
+          </table>
+          <p class="pt-5 pl-2">
+            Dezimal: <span id="bin-tc-result" class="font-semibold">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 42 - 44 -->
+    <div class="page page-42 page-43 page-44 fade-next">
+      <div class="flex justify-center items-center flex-col absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-2xl pb-5 font-semibold">Eine Zahl invertieren</h1>
+
+          <p class="page-stage page-43 page-44 transition-opacity page-45 mb-2">Schritt 1: <span class="p-1"></span> Ziffern invertieren</p>
+          <p class="page-stage page-43 page-44 transition-opacity page-45 mb-5">0110 <span class="p-1"></span> > <span class="p-1"></span> 1001</p>
+
+          <p class="page-stage page-44 page-45 transition-opacity mb-2">Schritt 2: <span class="p-1"></span> 1 addieren</p>
+          <p class="page-stage page-44 page-45 transition-opacity">1001 <span class="p-1"></span> > <span class="p-1"></span> 1010</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 45 -->
+    <div class="page page-45 fade-next">
+      <div class="flex justify-center items-center flex-col absolute inset-0">
+        <div class="text-center">
+          <h1 class="text-2xl">Warum ?</h1>
+        </div>
+      </div>
+    </div>
+
+    <iframe class="absolute lmkl" style="inset: 0.01%;" width="100.02%" height="100.02%" src="https://obnoxiousoliver.github.io/logik-macht-keine-logik/" frameborder="0"></iframe>
+  </div>
+
+</body>
+
+<script src="./all.js"></script>
+<link rel="stylesheet" href="./all.css">
+
+</html>
+
+<!-- :) -->
